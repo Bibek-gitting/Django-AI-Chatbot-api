@@ -4,12 +4,17 @@ A RESTful AI chatbot API built with Django and Django REST Framework. Users can 
 
 ---
 
-## ​ Features
+**✨ Features**
+------------
 
-- **User signup & login** using token authentication
-- **Chat endpoint**: send a message to the AI and receive a response
-- **Token deduction**: 100 tokens are charged per chat request
-- No frontend – designed as a backend-only API
+1. **User Registration**: Users can register with the chatbot using a unique username and password.
+2. **User Login**: Users can login to the chatbot using their registered username and password.
+3. **Chat Functionality**: Users can interact with the chatbot by sending messages, and the chatbot will respond with a pre-defined message.
+4. **Token Balance**: Users can check their token balance, which is used to track the number of messages they can send.
+5. **Admin Interface**: Administrators can view and manage user accounts, chat logs, and token balances.
+6. **RESTful APIs**: The project uses RESTful APIs for communication between the client and server.
+7. **Django Framework**: The project is built using Django, a high-level Python web framework.
+8. **Security**: The project includes basic security features such as password hashing and token validation.
 
 ---
 
@@ -50,3 +55,69 @@ A RESTful AI chatbot API built with Django and Django REST Framework. Users can 
 
     ```bash
     python manage.py runserver
+
+---
+
+**🧰 Tech Stack Table**
+----------------------
+
+| Frontend | Backend | Tools |
+| --- | --- | --- |
+| HTML/CSS/JS | Django | Python 3.9 |
+| RESTful APIs | Django REST framework | SQLite |
+| JavaScript |  |  |
+|  |  |  |
+
+---
+
+**📁 Project Structure**
+----------------------
+
+```bash
+chatbot/
+  chatbot/
+    asgi.py
+    wsgi.py
+    settings.py
+    urls.py
+    __init__.py
+  api/
+    urls.py
+    views.py
+    models.py
+    serializers.py
+    admin.py
+    apps.py
+    __init__.py
+    tests.py
+  requirements.txt
+  manage.py
+```
+
+---
+
+**🧪 Testing Instructions**
+-------------------------
+
+1. **Unit Tests**: Run `python manage.py test` to run the unit tests.
+2. **Integration Tests**: Run `python manage.py test --integration` to run the integration tests.
+
+**📸 Screenshots**
+----------------
+
+[Insert screenshots of the project in action]
+
+**📦 API Reference**
+---------------------
+
+[Insert API reference documentation or a link to it]
+
+**👤 Author**
+------------
+
+[Your Name]
+
+**📝 License**
+------------
+
+The Chatbot project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
